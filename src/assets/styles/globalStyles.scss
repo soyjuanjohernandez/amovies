@@ -5,6 +5,7 @@
     --color-primary: #ffffff;
     --color-secondary:#000000 ;
     --color-accent:#f1f400;
+    --color-background-light:#eeeeee;
 
     --spacing-xs: 5px;
     --spacing-s: 10px;
@@ -12,7 +13,10 @@
     --spacing-l: 20px;
     --spacing-xl: 20px;
 
-    --box-Shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+
+    --transition-all: all .3s;
+    --transition-time: .3s;
 }
 
 * {
