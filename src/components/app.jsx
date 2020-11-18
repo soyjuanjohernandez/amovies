@@ -1,10 +1,12 @@
-import React from 'react'
-import '../assets/styles/App.scss'
+import React from 'react';
+import '../assets/styles/App.scss';
 
-export const App = () => {
-    return (
-        <div>
-            <h1>Hello from App</h1>
-        </div>
-    )
-}
+const App = () => {
+  return (
+    <div>
+      <h1>Hello from App</h1>
+    </div>
+  );
+};
+
+export default App;
