@@ -4,11 +4,10 @@ import Button from '../button/Button';
 
 const Banner = (props) => {
 
-  const { title, description, bannerBtnPrimaryOnClick, bannerBtnSecondaryOnClick, cover, coverMobile } = props;
+  const { title, description, bannerBtnPrimaryOnClick, bannerBtnSecondaryOnClick, cover, coverMobile, id } = props;
 
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const imageUrl = windowWidth >= 650 ? cover : coverMobile ;
-
   useEffect(() => {
     const handleWindowResize = () => {
       setWindowWidth(window.innerWidth);
@@ -20,12 +19,12 @@ const Banner = (props) => {
   }, []);
 
   return (
-    <div
-      className='banner'
-      style={{ backgroundImage: `url(${imageUrl})` }}
-    //   style={{ backgroundImage: `url(${cover})` }}
-    >
 
+    <div
+      className={`banner banner${id}`}
+      style={{ backgroundImage: `url(${imageUrl})` }}
+      id={id}
+    >
       <div className='banner__container'>
         <div className='banner__info'>
           <h2>{title}</h2>
