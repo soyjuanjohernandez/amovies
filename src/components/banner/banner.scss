@@ -28,7 +28,7 @@
 @media screen and (max-width: 1500px) {
     .banner{
         // color:red;
-        padding-left: 50px;
+        // padding-left: 50px;
         & .banner__container{
            
             grid-template-columns: 1.5fr  1fr;
@@ -39,14 +39,30 @@
 @media screen and (max-width: 777px) {
     .banner{
         // color:red;
-        padding: 0 50px;
+        // padding: 0 50px;
         background-position:right top;
+        & .banner__info{
+            align-self: center;
+            & h2{
+                font-size: 60px;
+                 padding: 20px;
+            }
+            & p{
+                padding: 20px;
+              
+            }
+        }
         & .banner__container{
             grid-template-columns: 1fr;
             & .banner__buttons {
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                & .btn__container{
+                    font-size: 14px;
+                    padding: 9px 40px;
+
+                }
             }
         }
     }
