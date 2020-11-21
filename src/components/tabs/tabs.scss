@@ -28,3 +28,10 @@ a.tab-active .tab-item__container{
         opacity: 1 !important;
     }
 }
+
+
+@media screen and (max-width: 1500px) {
+    .tabs__container{
+        padding-left: 50px;
+    }
+}

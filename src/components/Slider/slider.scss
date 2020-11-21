@@ -22,7 +22,6 @@
             display: none;
           }
           & label{
-            // border: 2px solid var(--color-accent);
             background-color: var(--color-primary);
             padding: 5px;
             border-radius: 30px;
@@ -56,7 +55,12 @@
    margin-right: 20px;
 }
 
-
-.radio-btn{
-    // position: absolute;
+@media screen and (max-width: 777px) {
+   .slider {
+    & .slider__nav-buttons{
+   
+        right: initial;
+      left: calc( 50% - 25px);
+        }
+   }
 }

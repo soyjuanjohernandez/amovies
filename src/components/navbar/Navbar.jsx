@@ -25,7 +25,7 @@ export default function Navbar() {
           activeClassName='active'
           to='/'
         >
-          <img src={logoImg} alt='Logo a movies' title='logo a movies' />
+          <img src={logoImg} className='navbar__logo' alt='Logo a movies' title='logo a movies' />
         </NavLink>
         <ul className='navbar__links'>
           <li className='navbar__links--item'>

@@ -10,7 +10,7 @@
       "isBanner": false,
       "year": 2018,
       "rating": 4,
-      "favorite": true,
+      "favorite": false,
       "recommended": true,
       "trend": false,
       "video": "https://www.youtube.com/embed/27zlBpzdOZg"

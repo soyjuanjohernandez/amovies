@@ -53,12 +53,12 @@
     display: none;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 721px) {
     .navbar .navbar__links{
         display: none;
     }
 }
-@media screen and (min-width: 699px) {
+@media screen and (min-width: 7020px) {
     .navbar{
 
         & .navbar__links2{
@@ -66,7 +66,7 @@
         }
     }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 721px) {
     .navbar{
         & .navbar__links2 {
             flex-direction: column;
@@ -142,3 +142,8 @@
     }
   }
 
+  @media screen and (max-width: 1500px) {
+    .navbar__logo{
+        margin-left: 20px;
+    }
+}

@@ -8,7 +8,7 @@
         max-width: 1440px;
         height: 100%;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1.5fr 1fr 1fr;
         margin: 0 auto;
     }
     & .banner__info{
@@ -21,6 +21,33 @@
         & p{
             font-size: 18px;
             margin: 40px 0 55px;
+        }
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .banner{
+        // color:red;
+        padding-left: 50px;
+        & .banner__container{
+           
+            grid-template-columns: 1.5fr  1fr;
+          
+        }
+    }
+}
+@media screen and (max-width: 777px) {
+    .banner{
+        // color:red;
+        padding: 0 50px;
+        background-position:right top;
+        & .banner__container{
+            grid-template-columns: 1fr;
+            & .banner__buttons {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
         }
     }
 }
