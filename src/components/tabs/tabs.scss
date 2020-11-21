@@ -1,0 +1,30 @@
+.tabs__container{
+    position: sticky;
+    top: 79px;
+    background-color: var(--color-primary);
+    z-index: 1;
+    margin: 25px 0;
+    padding: 20px 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.tabs{
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+a.tab-active .tab-item__container{
+    &:before{
+        content: '';
+        opacity: 1 !important;
+
+    }
+    &:after{
+        content: '';
+        opacity: 1 !important;
+    }
+}

@@ -1,17 +1,20 @@
 import React, { useEffect, useState } from 'react';
+import MoviesList from '../../components/moviesList/MoviesList';
 import Slider from '../../components/Slider/Slider';
+import getMovies from '../../hooks/getMovies';
 
 const Home = () => {
-  // const [movies, setMovies] = useState([]);
-  // useEffect(() => {
-  //   fetch('http://localhost:3000/movies')
-  //     .then(response => response.json())
-  //     .then(data => setMovies(data));
-  // }, []);
-  // console.log('MOVIES STATE', movies);
+
+  const API_URL = 'http://localhost:3000/movies';
+
+  const dataMovies = getMovies(API_URL);
+
+  console.log('DATA MOVIES IN TO HOME', dataMovies);
+
   return (
     <main>
-      <Slider />
+      <Slider dataMovies={dataMovies} />
+      <MoviesList dataMovies={dataMovies} />
     </main>
   );
 };

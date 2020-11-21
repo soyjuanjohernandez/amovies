@@ -9,9 +9,9 @@ module.exports = {
     filename: 'bundle.js',
     // publicPath: '/',
   },
-  devServer: {
-    historyApiFallback: true,
-  },
+  // devServer: {
+  //   historyApiFallback: true,
+  // },
   resolve: {
     extensions: ['.js', '.jsx'],
   },

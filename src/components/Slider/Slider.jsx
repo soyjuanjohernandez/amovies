@@ -1,31 +1,23 @@
 import React from 'react';
 import Banner from '../banner/Banner';
-import getMovies from '../../hooks/getMovies';
 import './slider.scss';
 
-const Slider = () => {
+const Slider = (props) => {
 
-  const API_URL = 'http://localhost:3000/movies';
-  const bannerMovies = getMovies(API_URL).filter(item => item.isBanner === true);
-
-  console.log('MOVIESS', bannerMovies);
-  // const bannerMovies = movies
-
+  const { dataMovies } = props;
+  const bannerMovies = dataMovies.filter(item => item.isBanner === true);
   const moveBanner = (value) => {
     document.querySelector('.slider_container').style.marginLeft = value;
   };
 
   return (
     <div className='slider'>
-
       <div className='slider_container'>
         {
           bannerMovies.map(item => (
-
             <li key={item.id}>
               <Banner {...item} bannerBtnPrimaryOnClick={() => alert(item.video)} />
             </li>
-
           ))
         }
       </div>
