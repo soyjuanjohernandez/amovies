@@ -2,11 +2,13 @@ import React, { useEffect, useState } from 'react';
 import MoviesList from '../../components/moviesList/MoviesList';
 import Slider from '../../components/Slider/Slider';
 import getMovies from '../../hooks/getMovies';
+import Movies from '../../../movies.json';
 
 const Home = () => {
 
-  const API_URL = 'http://localhost:3000/movies';
-  const dataMovies = getMovies(API_URL);
+  // const API_URL = 'http://localhost:3000/movies';
+  // const dataMovies = getMovies(API_URL);
+  const dataMovies = Movies;
 
   return (
     <main>

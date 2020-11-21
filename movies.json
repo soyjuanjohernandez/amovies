@@ -1,5 +1,4 @@
-{
-  "movies": [
+ [
     {
       "id": 1,
       "title": "Bohemian Rhapsody",
@@ -152,4 +151,3 @@
       "video": "https://www.youtube.com/embed/lcwmDAYt22k"
     }
   ]
-}
