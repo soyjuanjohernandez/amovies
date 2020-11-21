@@ -4,7 +4,7 @@
     overflow: hidden;
     position: relative;
     animation-name: fadeIn;
-    animation-duration: 2s;
+    animation-duration: 1s;
     & .movie-item__overlay{
         background-color: rgba(0, 0, 0, 0.8);
         color: var(--color-primary);

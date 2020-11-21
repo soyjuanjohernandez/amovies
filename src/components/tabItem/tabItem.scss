@@ -10,7 +10,6 @@
     transition: var(--transition-all);
     outline: transparent;
     white-space: nowrap;
-    // margin: 65px 0;
     &:before{
         content: '';
         height: 5px;
@@ -29,7 +28,6 @@
         position: absolute;
         margin: 0px 40%;
         padding: 0 -2px 0 4px;
-        /* margin-left: 2px; */
         bottom: -20px;
         border-top: 9px solid var(--color-secondary);
         border-left: solid 8px transparent;
@@ -49,7 +47,6 @@
         }
     }
     &:active{
-        // border: 2px solid var(--color-accent);
         background-color: var(--color-accent);
         color: var(--color-secondary);
     }

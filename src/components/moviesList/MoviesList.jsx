@@ -21,12 +21,10 @@ const MoviesList = (props) => {
         trendsOnClick={() => trendsMovies(dataMovies, setMovies)}
         favoritesOnClick={() => favoritesMovies(dataMovies, setMovies)}
         recommendationsOnClick={() => recommendedMovies(dataMovies, setMovies)}
-
       />
       <ul className='movies-list_items'>
         {
           movies.map(item => (
-
             <li key={item.id}>
               <MovieItem {...item} bannerBtnPrimaryOnClick={() => alert(item.video)} />
             </li>

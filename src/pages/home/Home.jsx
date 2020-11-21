@@ -6,10 +6,7 @@ import getMovies from '../../hooks/getMovies';
 const Home = () => {
 
   const API_URL = 'http://localhost:3000/movies';
-
   const dataMovies = getMovies(API_URL);
-
-  console.log('DATA MOVIES IN TO HOME', dataMovies);
 
   return (
     <main>

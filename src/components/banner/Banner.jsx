@@ -19,7 +19,6 @@ const Banner = (props) => {
   }, []);
 
   return (
-
     <div
       className={`banner banner${id}`}
       style={{ backgroundImage: `url(${imageUrl})` }}

@@ -4,7 +4,6 @@ import './tabs.scss';
 import TabItem from '../tabItem/TabItem';
 
 const Tabs = (props) => {
-
   const {
     allOnClick,
     newOnClick,
@@ -49,7 +48,6 @@ const Tabs = (props) => {
             name='Most popular'
             title='Most popular'
             onClick={popularOnClick}
-
           />
         </NavHashLink>
 
