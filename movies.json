@@ -1,5 +1,4 @@
-{
-  "movies": [
+ [
     {
       "id": 1,
       "title": "Bohemian Rhapsody",
@@ -19,7 +18,7 @@
     {
       "id": 2,
       "title": "Venom",
-      "description":"Journalist Eddie Brock is trying to take down Carlton Drake, the notorious and brilliant founder of the Life Foundation. While investigating one of Drake's experiments, Eddie's body merges with the alien Venom -- leaving him with superhuman strength and power. Twisted, dark and fueled by rage, Venom tries to control the new and dangerous abilities that Eddie finds so intoxicating.",
+      "description":"Journalist Eddie Brock is trying to take down Carlton Drake, the notorious and brilliant founder of the Life Foundation. While investigating one of Drake's experiments, Eddie's body merges with the alien Venom -- leaving him with superhuman strength and power.",
       "cover":"https://firebasestorage.googleapis.com/v0/b/soyjuanjohernandez-blog.appspot.com/o/amovies%2Fbanners%2Fbanner-venom.png?alt=media&token=17de482b-680f-4c31-898d-1ea348645fec",
       "coverMobile":"https://firebasestorage.googleapis.com/v0/b/soyjuanjohernandez-blog.appspot.com/o/amovies%2Fbanners%2Fbanner-venom-mob.png?alt=media&token=369e78ed-0cfc-4afb-be31-966d74204d22",
       "thumbnail":"https://firebasestorage.googleapis.com/v0/b/soyjuanjohernandez-blog.appspot.com/o/amovies%2Fthumbnails%2Fvenom.jpg?alt=media&token=aef7d682-8758-41dd-9521-19921716258e",
@@ -124,7 +123,7 @@
     {
       "id": 9,
       "title": "Aquaman",
-      "description":"Once home to the most advanced civilization on Earth, the city of Atlantis is now an underwater kingdom ruled by the power-hungry King Orm. With a vast army at his disposal, Orm plans to conquer the remaining oceanic people -- and then the surface world. Standing in his way is Aquaman, Orm's half-human, half-Atlantean brother and true heir to the throne. With help from royal counselor Vulko, Aquaman must retrieve the legendary Trident of Atlan and embrace his destiny as protector of the deep.",
+      "description":"Once home to the most advanced civilization on Earth, the city of Atlantis is now an underwater kingdom ruled by the power-hungry King Orm. With a vast army at his disposal, Orm plans to conquer the remaining oceanic people -- and then the surface world. ",
       "cover":"https://firebasestorage.googleapis.com/v0/b/soyjuanjohernandez-blog.appspot.com/o/amovies%2Fbanners%2Fbanner-aquaman.jpg?alt=media&token=5fc03f0b-cff2-4d0b-8f79-acc858444b9a",
       "coverMobile":"https://firebasestorage.googleapis.com/v0/b/soyjuanjohernandez-blog.appspot.com/o/amovies%2Fbanners%2Fbanner-aquaman-mob.jpg?alt=media&token=f778ed9a-e263-4b0e-8529-657bfc5d88b9",
       "thumbnail":"https://firebasestorage.googleapis.com/v0/b/soyjuanjohernandez-blog.appspot.com/o/amovies%2Fthumbnails%2Faquaman.jpg?alt=media&token=647ce4be-c1f1-4b6f-8c6d-42d9e4061a4a",
@@ -139,7 +138,7 @@
     {
       "id": 10,
       "title": "bumblebee",
-      "description":"On the run in the year 1987, Bumblebee the Autobot seeks refuge in a junkyard in a small California beach town. Charlie, on the brink of turning 18 years old and trying to find her place in the world, soon discovers the battle-scarred and broken Bumblebee. When Charlie revives him, she quickly learns that this is no ordinary yellow Volkswagen.",
+      "description":"On the run in the year 1987, Bumblebee the Autobot seeks refuge in a junkyard in a small California beach town. Charlie, on the brink of turning 18 years old and trying to find her place in the world, soon discovers the battle-scarred and broken Bumblebee.",
       "cover":"https://firebasestorage.googleapis.com/v0/b/soyjuanjohernandez-blog.appspot.com/o/amovies%2Fbanners%2Fbanner-bumblebee.jpg?alt=media&token=0789b1d7-9e29-48e8-8103-4b87a4f32769",
       "coverMobile":"https://firebasestorage.googleapis.com/v0/b/soyjuanjohernandez-blog.appspot.com/o/amovies%2Fbanners%2Fbanner-bumblebee-mob.jpg?alt=media&token=faf12c96-62d9-452f-b25f-3eec6b2fa140",
       "thumbnail":"https://firebasestorage.googleapis.com/v0/b/soyjuanjohernandez-blog.appspot.com/o/amovies%2Fthumbnails%2Fbumblebee.jpg?alt=media&token=1b4086bb-e584-48e1-81e9-0f5faebd09b8",
@@ -152,4 +151,3 @@
       "video": "https://www.youtube.com/embed/lcwmDAYt22k"
     }
   ]
-}
