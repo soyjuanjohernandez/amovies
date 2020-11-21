@@ -2,6 +2,11 @@
     height: 79px;
     font-weight: 700;
     background-color: var(--color-primary);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    box-shadow: var(--box-shadow);
     & .navbar__content{
         max-width: 1440px;
         height: 100%;
@@ -44,4 +49,96 @@
         }
     }
 }
+.navbar__menu-button{
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
+    .navbar .navbar__links{
+        display: none;
+    }
+}
+@media screen and (min-width: 699px) {
+    .navbar{
+
+        & .navbar__links2{
+            display: none;
+        }
+    }
+}
+@media screen and (max-width: 700px) {
+    .navbar{
+        & .navbar__links2 {
+            flex-direction: column;
+            height: 322px;
+            justify-content: space-around;
+            align-self: flex-start;
+            background-color: var(--color-primary);
+            padding-bottom: 51px;
+            margin-top: 81px;
+            border-bottom-left-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--box-shadow);
+                & .navbar__links--item{
+                    height: 82px;
+                    border-bottom: solid 1px var(--color-background-light);
+                    & a{
+                        text-decoration: none;
+                        color: var(--color-secondary);
+                        & span{
+                            width: 200px;
+                            text-align: center;
+                            height: 82px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        & span:hover{
+                            background-color: var(--color-accent);
+                        }
+                        &.active span{
+                            background-color: var(--color-accent);
+                        }
+                    }
+                }
+            }
+        }
+    .navbar .navbar__links .navbar__links--item a.active{
+        background-color: initial;
+    }
+    .navbar .navbar__links .navbar__links--item a:hover{
+        background-color: initial;
+    }
+    .navbar .navbar__links .navbar__links--item:last-child a{
+        background-color:initial;
+        &:hover{
+            background-color: initial;
+        }
+    }
+    .navbar .navbar__links .navbar__links--item:last-child:hover a{
+        background-color: initial;
+    }
+    .navbar__menu-button{
+        position: absolute;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        & button{
+            background-color: transparent;
+            border: none;
+            outline-color: var(--color-accent);
+            padding: 23px;
+            cursor: pointer;
+            &:hover{
+                background-color: var(--color-accent);
+            }
+        }
+        & img{
+            width: 25px;
+            height: 25px;
+        }
+    }
+  }
 

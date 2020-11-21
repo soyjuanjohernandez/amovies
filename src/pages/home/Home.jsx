@@ -12,6 +12,11 @@ const Home = () => {
     <main>
       <Slider dataMovies={dataMovies} />
       <MoviesList dataMovies={dataMovies} />
+      <div style={{ height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center', background: '#f5f5f5' }}>
+
+        <h1>ANOTHER SECTION</h1>
+
+      </div>
     </main>
   );
 };

@@ -1,10 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import './navbar.scss';
 
 import logoImg from '../../assets/images/logo.png';
+import menu from '../../assets/images/menu.svg';
+import close from '../../assets/images/close.svg';
 
 export default function Navbar() {
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+
+    setIsOpen(!isOpen);
+  };
+
+  const menuImage = isOpen ? close : menu;
 
   return (
     <nav className='navbar'>
@@ -23,7 +34,10 @@ export default function Navbar() {
               activeClassName='active'
               to='/'
             >
-              Home
+              <span>
+
+                Home
+              </span>
             </NavLink>
           </li>
 
@@ -32,7 +46,9 @@ export default function Navbar() {
               activeClassName='active'
               to='/categories'
             >
-              Categories
+              <span>
+                Categories
+              </span>
             </NavLink>
           </li>
           <li className='navbar__links--item'>
@@ -40,16 +56,73 @@ export default function Navbar() {
               activeClassName='active'
               to='/favorites'
             >
-              My favorites
+              <span>
+                My favorites
+              </span>
             </NavLink>
           </li>
           <li className='navbar__links--item'>
             <a href='#'>
-              Sign in
+              <span>
+                Sign in
+              </span>
             </a>
           </li>
+
         </ul>
+        { isOpen && (
+          <ul className='navbar__links2'>
+            <li className='navbar__links--item'>
+              <NavLink
+                exact
+                activeClassName='active'
+                to='/'
+              >
+                <span>
+
+                  Home
+                </span>
+              </NavLink>
+            </li>
+
+            <li className='navbar__links--item'>
+              <NavLink
+                activeClassName='active'
+                to='/categories'
+              >
+                <span>
+                  Categories
+                </span>
+              </NavLink>
+            </li>
+            <li className='navbar__links--item'>
+              <NavLink
+                activeClassName='active'
+                to='/favorites'
+              >
+                <span>
+                  My favorites
+                </span>
+              </NavLink>
+            </li>
+            <li className='navbar__links--item'>
+              <a href='#'>
+                <span>
+                  Sign in
+                </span>
+              </a>
+            </li>
+
+          </ul>
+        )}
+        <div className='navbar__menu-button'>
+          <button type='button' onClick={toggleMenu}>
+            <img src={isOpen ? close : menu} alt='menu icon' title={isOpen ? 'close' : 'menu'} />
+          </button>
+
+        </div>
       </div>
+
     </nav>
   );
 }

@@ -7,7 +7,7 @@ const Banner = (props) => {
   const { title, description, bannerBtnPrimaryOnClick, bannerBtnSecondaryOnClick, cover, coverMobile, id } = props;
 
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const imageUrl = windowWidth >= 650 ? cover : coverMobile ;
+  const imageUrl = windowWidth >= 700 ? cover : coverMobile ;
   useEffect(() => {
     const handleWindowResize = () => {
       setWindowWidth(window.innerWidth);
