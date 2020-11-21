@@ -58,9 +58,8 @@
         display: none;
     }
 }
-@media screen and (min-width: 7020px) {
+@media screen and (min-width: 720px) {
     .navbar{
-
         & .navbar__links2{
             display: none;
         }
@@ -75,7 +74,7 @@
             align-self: flex-start;
             background-color: var(--color-primary);
             padding-bottom: 51px;
-            margin-top: 81px;
+            margin-top: 79px;
             border-bottom-left-radius: 10px;
             overflow: hidden;
             box-shadow: var(--box-shadow);

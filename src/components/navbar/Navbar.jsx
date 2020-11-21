@@ -23,7 +23,7 @@ export default function Navbar() {
         <NavLink
           exact
           activeClassName='active'
-          to='/'
+          to='/amovies'
         >
           <img src={logoImg} className='navbar__logo' alt='Logo a movies' title='logo a movies' />
         </NavLink>
@@ -32,7 +32,7 @@ export default function Navbar() {
             <NavLink
               exact
               activeClassName='active'
-              to='/'
+              to='/amovies'
             >
               <span>
 
@@ -76,7 +76,7 @@ export default function Navbar() {
               <NavLink
                 exact
                 activeClassName='active'
-                to='/'
+                to='/amovies'
               >
                 <span>
 

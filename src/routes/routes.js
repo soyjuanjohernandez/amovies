@@ -6,7 +6,7 @@ import Favorites from '../pages/Favorites';
 
 const Routes = () => (
   <Switch>
-    <Route exact path='/' component={Home} />
+    <Route exact path='/amovies' component={Home} />
     <Route exact path='/categories' component={Categories} />
     <Route exact path='/favorites' component={Favorites} />
   </Switch>
