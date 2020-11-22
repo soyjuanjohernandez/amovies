@@ -22,7 +22,7 @@ const Slider = (props) => {
 
   return (
     <div className='slider'>
-      <div className='slider_container'>
+      <ul className='slider_container'>
         {
           bannerMovies.map(item => (
             <li key={item.id}>
@@ -30,7 +30,7 @@ const Slider = (props) => {
             </li>
           ))
         }
-      </div>
+      </ul>
 
       <div className='slider__nav-buttons'>
         <input type='button' name='radio-btn' id='radio1' onClick={() => moveBanner('0')} />
