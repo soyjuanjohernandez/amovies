@@ -1,0 +1,10 @@
+@media screen and (max-width: 777px) {
+  .modal .modal__container{
+      & iframe {
+      max-width: 95vw;
+    }
+    & .modal__close-button{
+      right: 6px;
+    }
+  }
+}
