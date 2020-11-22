@@ -1,0 +1,50 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.685);
+  display: flex;
+ justify-content: center;
+  align-items: center;
+  z-index: 2;
+  & .modal__container {
+    position: relative;
+    background-color: var(--color-primary-alt);
+    border-radius: 5px;
+    padding: var(--spacing-xs);
+    box-shadow: var(--box-shadow);
+    & .modal__close-button {
+      position: absolute;
+      top: -40px;
+      right: -50px;
+      border:  2px solid var(--color-accent);
+     font-weight: 700;
+      background-color: var(--color-accent);
+      padding: 0.5rem 1rem;
+      color: var(--color-secondary);
+      cursor: pointer;
+      &:hover{
+        border: 2px solid var(--color-accent);
+        background-color: transparent;
+        color: var(--color-accent);
+        }
+      &:active{
+        border: 2px solid var(--color-accent);
+        background-color: var(--color-accent);
+        color: var(--color-secondary);
+      }
+    }
+  }
+}
+
+
+
+// .button:hover {
+//   cursor: pointer;
+//   transform: scale(1.1);
+// }
+// .button:active {
+//   transform: scale(1);
+// }

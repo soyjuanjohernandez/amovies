@@ -1,13 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Banner from '../banner/Banner';
+import ModalVideo from '../modalVideo/ModalVideo';
 import './slider.scss';
 
 const Slider = (props) => {
 
   const { dataMovies } = props;
+  const [modalOpen, setModalOpen] = useState(false);
+  const [videoUrl, setVideoUrl] = useState('');
   const bannerMovies = dataMovies.filter(item => item.isBanner === true);
   const moveBanner = (value) => {
     document.querySelector('.slider_container').style.marginLeft = value;
+  };
+  const openVideo = (url) => {
+    setModalOpen(true);
+    setVideoUrl(url);
+  };
+  const closeModal = () => {
+    setModalOpen(false);
   };
 
   return (
@@ -16,7 +26,7 @@ const Slider = (props) => {
         {
           bannerMovies.map(item => (
             <li key={item.id}>
-              <Banner {...item} bannerBtnPrimaryOnClick={() => alert(item.video)} />
+              <Banner {...item} bannerBtnPrimaryOnClick={() => openVideo(item.video)} />
             </li>
           ))
         }
@@ -30,6 +40,8 @@ const Slider = (props) => {
         <label htmlFor='radio2' className='label2' />
         <label htmlFor='radio3' className='label3' />
       </div>
+
+      <ModalVideo isOpen={modalOpen} onClose={closeModal} videoUrl={videoUrl} />
 
     </div>
   );
